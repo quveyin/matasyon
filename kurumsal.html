@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#4169E1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Kurumsal - Matasyon Ajans</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Matasyon Ajans">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="index.html#hizmetlerimiz">Hizmetlerimiz</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="index.html#kurumsal">Kurumsal</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="index.html#iletisim">İletişim</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
+        <!-- Mobile Menu Sidebar -->
+        <div class="mobile-menu-sidebar">
+            <div class="mobile-menu-header">
+                <img src="assets/images/logo.png" alt="Matasyon Ajans" class="mobile-menu-logo">
+                <div class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html" onclick="closeMobileMenu()">
+                        <i class="fas fa-home"></i>
+                        <span>Anasayfa</span>
+                    </a></li>
+                    <li><a href="index.html#hizmetlerimiz" onclick="closeMobileMenu()">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Hizmetlerimiz</span>
+                    </a></li>
+                    <li><a href="index.html#kurumsal" onclick="closeMobileMenu()">
+                        <i class="fas fa-building"></i>
+                        <span>Kurumsal</span>
+                    </a></li>
+                    <li><a href="index.html#iletisim" onclick="closeMobileMenu()">
+                        <i class="fas fa-envelope"></i>
+                        <span>İletişim</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="mobile-social-links">
+                    <a href="https://www.instagram.com/matasyonajans" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/905053676220" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-page">
+        <div class="container">
+            <h1 class="page-title">HAKKIMIZDA</h1>
+            
+            <div class="about-page-content">
+                <div class="about-page-image">
+                    <img src="assets/images/LOGO-MOCKUP.jpg" alt="Matasyon Ofis">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="about-page-text">
+                    <h2>Matasyon Ajans</h2>
+                    <p>Matasyon Ajans, markaların değerlerini doğru yansıtacak yaratıcı çözümler üretmek amacıyla kuruldu. Görsel tasarım, marka kimliği, dijital içerik ve sosyal medya alanlarında modern ve yenilikçi bakış açımızla hizmet veriyoruz.</p>
+                    
+                    <p>Bizim için tasarım yalnızca estetik değil, aynı zamanda bir iletişim aracıdır. Bu yüzden her projede markaların hikayesini deneylemesine analiz ediyor, çağın gözüyle özgün ve etkili görsel dünyalar kuruyoruz.</p>
+                    
+                    <p>Matasyon Ajans olarak vizyonumuz; markaların hedeflerine ulaşmasını sağlayan yaratıcı işlere imza atmak ve sektörde güvenilir bir çözüm ortağı olmaktır.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Yaratıcı Çözümler</h3>
+                            <p>Her proje için özgün ve yenilikçi tasarım yaklaşımları</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Profesyonel Ekip</h3>
+                            <p>Alanında uzman ve deneyimli tasarımcılar</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Sonuç Odaklı</h3>
+                            <p>Markanızın büyümesine katkı sağlayan stratejiler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Matasyon Ajans">
+                </div>
+                <div class="footer-info">
+                    <p>Yenimahalle mah. Çavuşpınarı cad.</p>
+                    <p>Nahide Gündüz apt. No 15/A</p>
+                    <p class="contact-phone"><a href="tel:+905053676220">+90 0505 367 6220</a></p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/matasyonajans" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/905053676220" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <p>Matasyon Ajans - 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

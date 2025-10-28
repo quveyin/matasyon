@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#4169E1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Matasyon Ajans</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="anasayfa">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Matasyon Ajans">
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#"
+                                onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Anasayfa</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="#kurumsal">Kurumsal</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
+        <!-- Mobile Menu Sidebar -->
+        <div class="mobile-menu-sidebar">
+            <div class="mobile-menu-header">
+                <img src="assets/images/logo.png" alt="Matasyon Ajans" class="mobile-menu-logo">
+                <div class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); closeMobileMenu(); return false;">
+                        <i class="fas fa-home"></i>
+                        <span>Anasayfa</span>
+                    </a></li>
+                    <li><a href="#hizmetlerimiz" onclick="closeMobileMenu()">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Hizmetlerimiz</span>
+                    </a></li>
+                    <li><a href="#kurumsal" onclick="closeMobileMenu()">
+                        <i class="fas fa-building"></i>
+                        <span>Kurumsal</span>
+                    </a></li>
+                    <li><a href="#iletisim" onclick="closeMobileMenu()">
+                        <i class="fas fa-envelope"></i>
+                        <span>İletişim</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="mobile-social-links">
+                    <a href="https://www.instagram.com/matasyonajans" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/905053676220" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-logo">
+                <div class="hero-logo-main">
+                    <img src="assets/images/logo.png" alt="Matasyon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Carousel -->
+    <section class="services" id="hizmetlerimiz">
+        <div class="container">
+            <h2 class="section-title">HİZMETLERİMİZ</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <a href="hizmetlerimiz.html#afis-poster-brosur" class="service-card">
+                            <div class="service-icon">
+                                <img class="icon-black" src="assets/icons/afis-poster-brosur.png" alt="Afiş & Poster & Broşür">
+                                <img class="icon-white" src="assets/icons/afis-poster-brosur-white.png"
+                                    alt="Afiş & Poster & Broşür">
+                            </div>
+                            <h3>Afiş & Poster & Broşür</h3>
+                            <p class="service-description">Markanızı en iyi şekilde tanıtmak için tasarımlar
+                                hazırlıyoruz.</p>
+                        </a>
+                        <a href="hizmetlerimiz.html#logo-tasarimi" class="service-card">
+                            <div class="service-icon">
+                                <img class="icon-black" src="assets/icons/logo-tasarim.png" alt="Logo Tasarımı">
+                                <img class="icon-white" src="assets/icons/logo-tasarim-white.png" alt="Logo Tasarımı">
+                            </div>
+                            <h3>Logo Tasarımı</h3>
+                            <p class="service-description">Markanızın kimliğini yansıtan özgün ve yaratıcı logo
+                                tasarımları.</p>
+                        </a>
+                        <a href="hizmetlerimiz.html#kurumsal-kimlik" class="service-card">
+                            <div class="service-icon">
+                                <img class="icon-black" src="assets/icons/kurumsal-kimlik.png" alt="Kurumsal Kimlik">
+                                <img class="icon-white" src="assets/icons/kurumsal-kimlik-white.png" alt="Kurumsal Kimlik">
+                            </div>
+                            <h3>Kurumsal Kimlik</h3>
+                            <p class="service-description">Markanızın profesyonel kimliğini oluşturmak için kapsamlı
+                                hizmetler.</p>
+                        </a>
+                        <a href="hizmetlerimiz.html#sosyal-medya-yonetimi" class="service-card">
+                            <div class="service-icon">
+                                <img class="icon-black" src="assets/icons/sosyal-medya-yonetim.png"
+                                    alt="Sosyal Medya Yönetimi">
+                                <img class="icon-white" src="assets/icons/sosyal-medya-yonetim-white.png"
+                                    alt="Sosyal Medya Yönetimi">
+                            </div>
+                            <h3>Sosyal Medya Yönetimi</h3>
+                            <p class="service-description">Sosyal medya hesaplarınızı profesyonelce yönetiyoruz.</p>
+                        </a>
+                        <a href="hizmetlerimiz.html#sosyal-medya-reklam" class="service-card">
+                            <div class="service-icon">
+                                <img class="icon-black" src="assets/icons/sosyal-medya-reklam.png" alt="Sosyal Medya Reklam">
+                                <img class="icon-white" src="assets/icons/sosyal-medya-reklam-white.png"
+                                    alt="Sosyal Medya Reklam">
+                            </div>
+                            <h3>Sosyal Medya Reklam</h3>
+                            <p class="service-description">Hedef kitlenize ulaşmak için etkili reklam stratejileri.</p>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="kurumsal">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/LOGO-MOCKUP.jpg" alt="Matasyon Ofis">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="about-text">
+                    <h2>Matasyon Ajans<br>Hakkında</h2>
+                    <p>Matasyon Ajans, markaların değerlerini doğru yansıtacak yaratıcı çözümler üretmek amacıyla
+                        kuruldu. Görsel tasarım, marka kimliği, dijital içerik ve sosyal medya alanlarında modern ve
+                        yenilikçi bakış açımızla hizmet veriyoruz. Bizim için tasarım yalnızca estetik değil, aynı
+                        zamanda bir iletişim aracıdır. Bu yüzden her projede markaların hikayesini deneylemesine analiz
+                        ediyor, çağın gözüyle özgün ve etkili görsel dünyalar kuruyoruz. Matasyon Ajans olarak
+                        vizyonumuz; markaların hedeflerine ulaşmasını sağlayan yaratıcı işlere imza atmak ve sektörde
+                        güvenilir bir çözüm ortağı olmaktır.</p>
+                    <a href="kurumsal.html" class="btn-primary">Daha fazla bilgi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <img src="assets/images/stats-icons/musteri.png" alt="Müşteri">
+                    </div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">MUTLU MÜŞTERİ</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <img src="assets/images/stats-icons/proje.png" alt="Proje">
+                    </div>
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">BİTİRİLEN PROJE</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <img src="assets/images/stats-icons/yil.png" alt="Yıl">
+                    </div>
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">ÇALIŞAN SAYISI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-carousel-section">
+        <div class="container">
+            <h2 class="section-title">EKİBİMİZ</h2>
+            <div class="team-carousel-container">
+                <button class="carousel-btn prev-btn team-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="team-carousel">
+                    <div class="team-carousel-track">
+                        <div class="team-carousel-member">
+                            <img src="assets/images/team/ugurcan.png" alt="Uğurcan Duymuş">
+                            <div class="team-member-info">
+                                <h3>UĞURCAN DUYMUŞ</h3>
+                                <p>Grafik Tasarım / Video - Kurgu</p>
+                            </div>
+                        </div>
+                        <div class="team-carousel-member">
+                            <img src="assets/images/team/yavuz.png" alt="Yavuz Alver">
+                            <div class="team-member-info">
+                                <h3>YAVUZ ALVER</h3>
+                                <p>Grafik Tasarım / İçerik / Çekim</p>
+                            </div>
+                        </div>
+                        <div class="team-carousel-member">
+                            <img src="assets/images/team/melih.png" alt="Melih Tuğlu">
+                            <div class="team-member-info">
+                                <h3>MELİH TUĞLU</h3>
+                                <p>Grafik Tasarım</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn team-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="team-carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="iletisim">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Markanı büyütmek<br>ve fark yaratmak için<br>bize ulaşın</h2>
+                <a href="iletisim.html" class="btn-secondary">bize ulaşın</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spacer Section -->
+    <div class="footer-spacer"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Matasyon Ajans">
+                </div>
+                <div class="footer-info">
+                    <p>Yenimahalle mah. Çavuşpınarı cad.</p>
+                    <p>Nahide Gündüz apt. No 15/A</p>
+                    <p class="contact-phone"><a href="tel:+905053676220">+90 0505 367 6220</a></p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/matasyonajans" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/905053676220" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <p>Matasyon Ajans - 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="carousel-simple.js"></script>
+    <script src="team-carousel.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

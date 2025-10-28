@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#4169E1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Hizmetlerimiz - Matasyon Ajans</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Matasyon Ajans">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="index.html#hizmetlerimiz">Hizmetlerimiz</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="index.html#kurumsal">Kurumsal</a></li>
+                        <li class="nav-separator"></li>
+                        <li><a href="index.html#iletisim">İletişim</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay"></div>
+        <!-- Mobile Menu Sidebar -->
+        <div class="mobile-menu-sidebar">
+            <div class="mobile-menu-header">
+                <img src="assets/images/logo.png" alt="Matasyon Ajans" class="mobile-menu-logo">
+                <div class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html" onclick="closeMobileMenu()">
+                        <i class="fas fa-home"></i>
+                        <span>Anasayfa</span>
+                    </a></li>
+                    <li><a href="index.html#hizmetlerimiz" onclick="closeMobileMenu()">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Hizmetlerimiz</span>
+                    </a></li>
+                    <li><a href="index.html#kurumsal" onclick="closeMobileMenu()">
+                        <i class="fas fa-building"></i>
+                        <span>Kurumsal</span>
+                    </a></li>
+                    <li><a href="index.html#iletisim" onclick="closeMobileMenu()">
+                        <i class="fas fa-envelope"></i>
+                        <span>İletişim</span>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="mobile-social-links">
+                    <a href="https://www.instagram.com/matasyonajans" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/905053676220" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Detail Section -->
+    <section class="services-detail">
+        <div class="container">
+            <h1 class="page-title">HİZMETLERİMİZ</h1>
+            
+            <div class="services-grid">
+                <div class="service-detail-card" id="afis-poster-brosur">
+                    <div class="service-detail-icon">
+                        <img src="assets/icons/afis-poster-brosur.png" alt="Afiş & Poster & Broşür">
+                    </div>
+                    <h2>Afiş & Poster & Broşür</h2>
+                    <p>Markanızı en iyi şekilde tanıtmak için özel tasarlanmış afiş, poster ve broşürler hazırlıyoruz. Görsel iletişimde fark yaratacak yaratıcı çözümler sunuyoruz.</p>
+                    <ul class="service-features">
+                        <li>Etkinlik ve kampanya afişleri</li>
+                        <li>Ürün ve hizmet tanıtım broşürleri</li>
+                        <li>Kurumsal poster tasarımları</li>
+                        <li>Katalog ve dergi tasarımı</li>
+                        <li>Baskıya hazır dosya teslimi</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-card" id="logo-tasarimi">
+                    <div class="service-detail-icon">
+                        <img src="assets/icons/logo-tasarim.png" alt="Logo Tasarımı">
+                    </div>
+                    <h2>Logo Tasarımı</h2>
+                    <p>Markanızın kimliğini yansıtan özgün ve yaratıcı logo tasarımları. Her logo, markanızın değerlerini ve vizyonunu en iyi şekilde temsil edecek şekilde tasarlanır.</p>
+                    <ul class="service-features">
+                        <li>Özgün ve profesyonel logo konseptleri</li>
+                        <li>Sınırsız revizyon hakkı</li>
+                        <li>Vektörel dosya formatları (AI, EPS, SVG)</li>
+                        <li>Farklı renk varyasyonları</li>
+                        <li>Logo kullanım kılavuzu</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-card" id="kurumsal-kimlik">
+                    <div class="service-detail-icon">
+                        <img src="assets/icons/kurumsal-kimlik.png" alt="Kurumsal Kimlik">
+                    </div>
+                    <h2>Kurumsal Kimlik</h2>
+                    <p>Markanızın profesyonel kimliğini oluşturmak için kapsamlı hizmetler. Kartvizit, antetli kağıt, zarf ve tüm kurumsal materyallerinizi tasarlıyoruz.</p>
+                    <ul class="service-features">
+                        <li>Kartvizit ve antetli kağıt tasarımı</li>
+                        <li>Zarf ve dosya tasarımları</li>
+                        <li>E-posta imza tasarımı</li>
+                        <li>Sunum şablonları</li>
+                        <li>Marka kimlik kılavuzu</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-card" id="sosyal-medya-yonetimi">
+                    <div class="service-detail-icon">
+                        <img src="assets/icons/sosyal-medya-yonetim.png" alt="Sosyal Medya Yönetimi">
+                    </div>
+                    <h2>Sosyal Medya Yönetimi</h2>
+                    <p>Sosyal medya hesaplarınızı profesyonelce yönetiyoruz. İçerik üretimi, paylaşım planlaması ve topluluk yönetimi ile markanızı dijital dünyada güçlendiriyoruz.</p>
+                    <ul class="service-features">
+                        <li>İçerik stratejisi ve planlama</li>
+                        <li>Görsel ve video içerik üretimi</li>
+                        <li>Düzenli paylaşım yönetimi</li>
+                        <li>Topluluk yönetimi ve etkileşim</li>
+                        <li>Aylık performans raporları</li>
+                    </ul>
+                </div>
+
+                <div class="service-detail-card" id="sosyal-medya-reklam">
+                    <div class="service-detail-icon">
+                        <img src="assets/icons/sosyal-medya-reklam.png" alt="Sosyal Medya Reklam">
+                    </div>
+                    <h2>Sosyal Medya Reklam</h2>
+                    <p>Hedef kitlenize ulaşmak için etkili reklam stratejileri. Facebook, Instagram ve diğer platformlarda ROI odaklı kampanyalar yönetiyoruz.</p>
+                    <ul class="service-features">
+                        <li>Hedef kitle analizi ve segmentasyon</li>
+                        <li>Facebook ve Instagram reklam kampanyaları</li>
+                        <li>Google Ads yönetimi</li>
+                        <li>A/B test ve optimizasyon</li>
+                        <li>Detaylı performans takibi ve raporlama</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Matasyon Ajans">
+                </div>
+                <div class="footer-info">
+                    <p>Yenimahalle mah. Çavuşpınarı cad.</p>
+                    <p>Nahide Gündüz apt. No 15/A</p>
+                    <p class="contact-phone"><a href="tel:+905053676220">+90 0505 367 6220</a></p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/matasyonajans" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/905053676220" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <p>Matasyon Ajans - 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
